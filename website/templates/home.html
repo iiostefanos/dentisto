@@ -84,14 +84,14 @@
                   <li><a href="about.html">About</a></li>
                   <li><a href="service.html">Service</a></li>
                   <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
             </div>
 
             <!-- Booking Now Button -->
-            <a href="#" class="btn dento-btn booking-btn">Booking Now</a>
+            <a href="#" class="btn dento-btn booking-btn">Book Now</a>
           </nav>
         </div>
       </div>
@@ -115,7 +115,7 @@
                   offer you.</p>
                 <div class="welcome-btn-group">
                   <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
                 <p data-animation="fadeInDown" data-delay="400ms">Feel free to book an appointment @ <strong>Dentisto</strong>, you will smile more often after.</p>
                 <div class="welcome-btn-group">
                   <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="600ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="800ms">Contact Us</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="800ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -225,8 +225,15 @@
               <h2>About Us</h2>
               <div class="line"></div>
             </div>
-            <p><strong>Dentisto</strong> was established in 2007 with the aim of helping the people to smile by providing a comprehensive range of dental services and unparallelled patient care at affordable prices and flexible times. </p>
-
+            <p><strong>Dentisto</strong> was established in 2007 with the aim of helping the people to smile by providing
+                 a comprehensive range of dental services and unparallelled patient care at affordable prices and flexible times. </p>
+            <p>We offer a wide range of services; from basic dental healthcare such as full check-ups and restorative work, to an array of cosmetic treatments to help you get that winning smile. 
+             We are absolutely committed to ensuring complete satisfaction and this is why all of our patients leave our practice with a smile on their face. 
+             <p> We are constantly offering new and the most innovative types of dental treatments.<strong> Dr. Michaela Barley</strong> 
+               on implant dentistry as well as surgical aspects of dentistry.</p>  
+            <p><strong>Dr. Chloe Foley</strong>  has completed various aesthetic courses which she puts into practice. 
+                We try and offer a wide range of specialist services and have a visiting orthodontist and endodontist.</p>
+            
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
               <h6>Experience Dentist</h6>
@@ -413,53 +420,53 @@
               <tbody>
                 <tr>
                   <th scope="row">Teeth Whitening Service at home</th>
-                  <td>1 times</td>
-                  <td>$115.00</td>
+                  <td>2 time(s)</td>
+                  <td>€ 115.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Teeth Whitening Service at Dental Clinic</th>
-                  <td>1 times</td>
-                  <td>$100.00</td>
+                  <td>3 time(s)</td>
+                  <td>€ 100.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Ceramic crowns and fillings Dental porcelain</th>
-                  <td>1 times</td>
-                  <td>$99.00</td>
+                  <td>1 time(s)</td>
+                  <td>€ 99.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Remove crowns, bridges Service</th>
                   <td>1 tooth</td>
-                  <td>$50.00</td>
+                  <td>€ 50.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Covering the recession of the gums</th>
-                  <td>1 times</td>
-                  <td>$400.00</td>
+                  <td>1 time(s)</td>
+                  <td>€ 400.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Consultation, impressions and preparation of models</th>
-                  <td>1 times</td>
-                  <td>$35.00</td>
+                  <td>4 time(s)</td>
+                  <td>€ 35.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Removal of an old inlay, old crown</th>
-                  <td>1 times</td>
-                  <td>$99.00</td>
+                  <td>1 time(s)</td>
+                  <td>€ 99.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Overlay teeth whitening ( 2 arches)</th>
-                  <td>1 times</td>
-                  <td>$170.00</td>
+                  <td>1 time(s)</td>
+                  <td>€ 170.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Standard porcelain and zirconium crown on implant</th>
                   <td>1 tooth</td>
-                  <td>$499.00</td>
+                  <td>€ 499.00</td>
                 </tr>
                 <tr>
                   <th scope="row">Implantation of an implant (price depends on system used)</th>
                   <td>1 tooth</td>
-                  <td>$600.00</td>
+                  <td>€ 900.00</td>
                 </tr>
               </tbody>
             </table>
@@ -483,7 +490,7 @@
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center white">
-            <h2>Book An Apointment</h2>
+            <h2>Book An Appointment</h2>
             <div class="line"></div>
           </div>
         </div>
@@ -519,10 +526,11 @@
                   <div class="form-group mb-30">
                     <select name="your-scheldule" class="form-control">
                       <option value="Choose Your Scheldule">Choose Your Scheldule</option>
-                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
+                      <option value="9 AM to 10 AM">9 AM to 11 AM</option>
+                      <option value="11 AM to 12 PM">12 AM to 2 PM</option>
                       <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                      <option value="8 PM to 10 PM">4 PM to 6 PM</option>
+                      <option value="8 PM to 10 PM">6 PM to 8 PM</option>
                     </select>
                   </div>
                 </div>
@@ -530,10 +538,11 @@
                   <div class="form-group mb-30">
                     <select name="your-time" class="form-control">
                       <option value="Choose Your Time">Choose Your Scheldule</option>
-                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
+                      <option value="9 AM to 10 AM">9 AM to 11 AM</option>
+                      <option value="11 AM to 12 PM">12 AM to 2 PM</option>
                       <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                      <option value="8 PM to 10 PM">4 PM to 6 PM</option>
+                      <option value="8 PM to 10 PM">6 PM to 8 PM</option>
                     </select>
                   </div>
                 </div>
@@ -543,7 +552,7 @@
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn dento-btn">Booking Now</button>
+                  <button type="submit" class="btn dento-btn">Book Now</button>
                 </div>
               </div>
             </form>

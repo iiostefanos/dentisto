@@ -112,3 +112,21 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+'''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'info.dentisto@gmail.com'
+EMAIL_HOST_PASSWORD = 'PAROLA EMAILULUI'  
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False  
+'''
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''  
+EMAIL_USE_TLS = False
+  
+
+
+
