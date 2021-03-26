@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
+{% load static %}
 {% block content %} 
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -37,11 +38,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s6.png" alt="">
+              <img src="{% static 'website/img/core-img/s6.png' %}" alt="">
             </div>
             <h5>Teeth Whitening</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>Teeth whitening involves bleaching your teeth to make them lighter. It can't make your teeth brilliant white, but it can lighten the existing colour by several shades.</p>
           </div>
         </div>
 
@@ -49,11 +49,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s7.png" alt="">
+              <img src="{% static 'website/img/core-img/s7.png' %}" alt="">
             </div>
             <h5>Dental Implants</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>An artificial tooth (crown) is placed on an extension of the post (abutment) on the dental implant, giving you the look of a real tooth.</p>
           </div>
         </div>
 
@@ -61,11 +60,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s8.png" alt="">
+              <img src="{% static 'website/img/core-img/s8.png' %}" alt="">
             </div>
             <h5>Missing Teeth</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>Tooth agenesis is a condition in which teeth are missing. Anodontia is a genetic disorder defined as the absence of all teeth.</p>
           </div>
         </div>
 
@@ -73,11 +71,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s9.png" alt="">
+              <img src="{% static 'website/img/core-img/s9.png' %}" alt="">
             </div>
             <h5>Cosmetic Dentistry</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>Aimed at creating a positive change to your teeth and to your smile. Patients as they strive to maintain their health, function, and appearance for their lifetime.</p>
           </div>
         </div>
 
@@ -85,11 +82,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s10.png" alt="">
+              <img src="{% static 'website/img/core-img/s10.png' %}" alt="">
             </div>
             <h5>Examination</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>Regular dental exams are a critical part of preventive health care. During a dental exam, the dentist or hygienist will clean your teeth and check for cavities and gum disease.</p>
           </div>
         </div>
 
@@ -97,11 +93,10 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-service--area text-center mb-50">
             <div class="icon--">
-              <img src="./img/core-img/s6.png" alt="">
+              <img src="{% static 'website/img/core-img/s6.png' %}" alt="">
             </div>
             <h5>Teeth Pain</h5>
-            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
-              mattis mollis maximus.</p>
+            <p>Toothache, also known as dental pain, is pain in the teeth or their supporting structures, caused by dental diseases or pain referred to the teeth by non-dental diseases. </p>
           </div>
         </div>
 
@@ -109,65 +104,4 @@
     </div>
   </section>
   <!-- ***** Services Area End ***** -->
-
-  <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/7.jpg');">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Testimonials Slides -->
-          <div class="testimonials-slides owl-carousel">
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Testimonials Area End ***** -->
-
-  
-
-  {% endblock %}
+{% endblock %}

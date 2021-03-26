@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
+{% load static %}
 {% block content %} 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -34,26 +35,34 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="./img/bg-img/15.jpg" alt="">
+            <img src="{% static 'website/img/bg-img/15A1.jpg' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
         <div class="col-12 col-md-6">
           <div class="about-us-content mb-50">
             <!-- Section Heading -->
-            <div class="section-heading">
+            <div class="section-heading text-center">
               <h2>About Us</h2>
               <div class="line"></div>
             </div>
-            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar
-              augue.</p>
+            <p><strong>Dentisto</strong> was established in 2007 with the aim of helping the people to smile by providing
+                 a comprehensive range of dental services and unparallelled patient care at affordable prices and flexible times. 
+             </p>
+             <p>We offer a wide range of services; from basic dental healthcare such as full check-ups and restorative work, to an array of cosmetic treatments to help you get that winning smile. 
+             We are absolutely committed to ensuring complete satisfaction and this is why all of our patients leave our practice with a smile on their face. 
+             <p> We are constantly offering new and the most innovative types of dental treatments.<strong> Dr. Michaela Barley</strong> 
+               on implant dentistry as well as surgical aspects of dentistry.</p>  
+            <p><strong>Dr. Chloe Foley</strong>  has completed various aesthetic courses which she puts into practice. 
+                We try and offer a wide range of specialist services and have a visiting orthodontist and endodontist.</p>
+
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
               <h6>Experience Dentist</h6>
               <div id="bar1" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="80"></span>
+                <span class="fill" data-percentage="87"></span>
               </div>
             </div>
 
@@ -62,7 +71,7 @@
               <h6>Modern Equipment</h6>
               <div id="bar2" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="65"></span>
+                <span class="fill" data-percentage="79"></span>
               </div>
             </div>
 
@@ -71,7 +80,7 @@
               <h6>Friendly Staff</h6>
               <div id="bar3" class="barfiller">
                 <span class="tip"></span>
-                <span class="fill" data-percentage="85"></span>
+                <span class="fill" data-percentage="82"></span>
               </div>
             </div>
           </div>
@@ -129,142 +138,6 @@
   </section>
   <!-- Cool Facts Area End -->
 
-  <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/7.jpg');">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Testimonials Slides -->
-          <div class="testimonials-slides owl-carousel">
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
 
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Testimonials Area End ***** -->
-
-  <!-- ***** Dento Dentist Area Start ***** -->
-  <section class="dentist-area section-padding-100-0">
-    <div class="container">
-      <div class="row">
-        <!-- Section Heading -->
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Our Dentist</h2>
-            <div class="line"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- Single Dentist Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/9.png" alt="">
-            <!-- Dentist Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-              </div>
-              <!-- Dentist Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Dentist Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/10.png" alt="">
-            <!-- Dentist Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-              </div>
-              <!-- Dentist Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Dentist Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/11.png" alt="">
-            <!-- Dentist Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-              </div>
-              <!-- Dentist Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <!-- ***** Dento Dentist Area End ***** -->
 {% endblock %}

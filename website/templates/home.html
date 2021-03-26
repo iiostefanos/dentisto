@@ -114,7 +114,7 @@
                 <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, <strong>Dentisto</strong> is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                  <a href="{% url 'service' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
                   <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
@@ -145,176 +145,6 @@
   </section>
   <!-- ***** Welcome Area End ***** -->
 <hr>
-  <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/7.jpg' %}');">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Testimonials Slides -->
-          <div class="testimonials-slides owl-carousel">
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Aaron Clamsey</h6>
-                <p>Dental Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8B.png' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>
-                “I had a bone graft and front implant treatment at the Dentisto. The team were brilliant; 
-                the whole procedure was explained to me clearly at the beginning, 
-                so I was never unsure as to what would be happening with regards to treatment.”
-                </h5>
-                <h6>Natalie O'Mallow</h6>
-                <p>Implant Treatment</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/9A.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>“All the staff are friendly and always make you feel relaxed, even though you’re at the dentist! They were accommodating if I needed an appointment or wanted to ask anything about the implant. I am extremely happy with the finished result, people are amazed when I tell them my front tooth is an implant as it looks so real. For the amount of work and treatment I had completed, the price was also very reasonable.”</h5>
-                <h6>Alan McCarthy</h6>
-                <p>Root canals, Crowns, Fillings</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Testimonials Area End ***** -->
- 
-  
-
-  <!-- ****** About Us Area Start ******* -->
-  <section class="dento-about-us-area section-padding-100-0">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- About Us Thumbnail -->
-        <div class="col-12 col-md-6">
-          <div class="about-us-thumbnail mb-50">
-            <img src="{% static 'website/img/bg-img/15A.jpg' %}" alt="">
-          </div>
-        </div>
-        <!-- About Content -->
-        <div class="col-12 col-md-6">
-          <div class="about-us-content mb-50">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <h2>About Us</h2>
-              <div class="line"></div>
-            </div>
-            <p><strong>Dentisto</strong> was established in 2007 with the aim of helping the people to smile by providing
-                 a comprehensive range of dental services and unparallelled patient care at affordable prices and flexible times. </p>
-            <p>We offer a wide range of services; from basic dental healthcare such as full check-ups and restorative work, to an array of cosmetic treatments to help you get that winning smile. 
-             We are absolutely committed to ensuring complete satisfaction and this is why all of our patients leave our practice with a smile on their face. 
-             <p> We are constantly offering new and the most innovative types of dental treatments.<strong> Dr. Michaela Barley</strong> 
-               on implant dentistry as well as surgical aspects of dentistry.</p>  
-            <p><strong>Dr. Chloe Foley</strong>  has completed various aesthetic courses which she puts into practice. 
-                We try and offer a wide range of specialist services and have a visiting orthodontist and endodontist.</p>
-            
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Experience Dentist</h6>
-              <div id="bar1" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="87"></span>
-              </div>
-            </div>
-
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Modern Equipment</h6>
-              <div id="bar2" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="79"></span>
-              </div>
-            </div>
-
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Friendly Staff</h6>
-              <div id="bar3" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="82"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ****** About Us Area End ****** -->
-
-  <div class="container">
-    <div class="dento-border clearfix"></div>
-  </div>
-
-  <!-- Cool Facts Area Start -->
-  <section class="dento-cta-area">
-    <div class="container">
-      <div class="row">
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_genius"></i>
-            <h2><span class="counter">14</span></h2>
-            <h5>Years Of Experience</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_heart_alt"></i>
-            <h2><span class="counter">592</span>+</h2>
-            <h5>Happy Patients</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_book_alt"></i>
-            <h2><span class="counter">13</span></h2>
-            <h5>Certificates</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_id"></i>
-            <h2><span class="counter">21</span>+</h2>
-            <h5>Dentist</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Cool Facts Area End -->
-
   <!-- Dentisto Service Area Start -->
   <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/13.jpg' %});">
     <div class="container">
@@ -323,7 +153,7 @@
         <div class="col-12 col-lg-6">
           <div class="service-content mb-30">
             <!-- Section Heading -->
-            <div class="section-heading white">
+            <div class="section-heading white text-center">
               <h2>Our Services</h2>
               <div class="line"></div>
             </div>
@@ -393,6 +223,147 @@
   </section>
   <!-- Dentisto Service Area End -->
 
+<!-- ***** Dentisto Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Our Dentists</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Dentisto Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/19A.jpg' %}" alt="">
+            <!-- Dentisto Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                
+              </div>
+              <!-- Dentisto Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Michaela Barley</h5>
+                <p>Implant Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentisto Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/10A.png' %}" alt="">
+            <!-- Dentisto Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                
+              </div>
+              <!-- Dentisto Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>James Harvest</h5>
+                <p>Surgical Extractions </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentisto Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/14B.jpg' %}" alt="">
+            <!-- Dentisto Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                
+              </div>
+              <!-- Dentisto Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Chloe Foley</h5>
+                <p>Director of Dentistry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dentisto Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/7.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>
+                <h6>Aaron Clamsey</h6>
+                <p>Dental Patient</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8B.png' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>
+                “I had a bone graft and front implant treatment at the Dentisto. The team were brilliant; 
+                the whole procedure was explained to me clearly at the beginning, 
+                so I was never unsure as to what would be happening with regards to treatment.”
+                </h5>
+                <h6>Natalie O'Mallow</h6>
+                <p>Implant Treatment</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/9A.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“All the staff are friendly and always make you feel relaxed, even though you’re at the dentist! They were accommodating if I needed an appointment or wanted to ask anything about the implant. I am extremely happy with the finished result, people are amazed when I tell them my front tooth is an implant as it looks so real. For the amount of work and treatment I had completed, the price was also very reasonable.”</h5>
+                <h6>Alan McCarthy</h6>
+                <p>Root canals, Crowns, Fillings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+ 
   <!-- Dentisto Pricing Table Area Start -->
   <section class="dento-pricing-table-area section-padding-100">
     <div class="container">
@@ -418,11 +389,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">Teeth Whitening Service at home</th>
-                  <td>2 time(s)</td>
-                  <td>€ 115.00</td>
-                </tr>
+                
                 <tr>
                   <th scope="row">Teeth Whitening Service at Dental Clinic</th>
                   <td>3 time(s)</td>
@@ -448,26 +415,13 @@
                   <td>4 time(s)</td>
                   <td>€ 35.00</td>
                 </tr>
-                <tr>
-                  <th scope="row">Removal of an old inlay, old crown</th>
-                  <td>1 time(s)</td>
-                  <td>€ 99.00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
-                  <td>1 time(s)</td>
-                  <td>€ 170.00</td>
-                </tr>
+               
                 <tr>
                   <th scope="row">Standard porcelain and zirconium crown on implant</th>
                   <td>1 tooth</td>
                   <td>€ 499.00</td>
                 </tr>
-                <tr>
-                  <th scope="row">Implantation of an implant (price depends on system used)</th>
-                  <td>1 tooth</td>
-                  <td>€ 900.00</td>
-                </tr>
+                
               </tbody>
             </table>
           </div>
@@ -475,7 +429,7 @@
 
         <div class="col-12">
           <div class="more-btn text-center mt-50">
-            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+            <a href="{% url 'pricing' %}" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
           </div>
         </div>
       </div>
@@ -563,78 +517,54 @@
   </section>
   <!-- Book An Appointment Area End -->
 
-  <!-- ***** Dentisto Area Start ***** -->
-  <section class="dentist-area section-padding-100-0">
+
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area section-padding-100-0">
     <div class="container">
-      <div class="row">
-        <!-- Section Heading -->
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Our Dentists</h2>
-            <div class="line"></div>
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/15.jpg' %}" alt="">
           </div>
         </div>
-      </div>
-
-      <div class="row">
-        <!-- Single Dentisto Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/19A.jpg' %}" alt="">
-            <!-- Dentisto Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                
-              </div>
-              <!-- Dentisto Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Michaela Barley</h5>
-                <p>Implant Expert</p>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+              <h2>About Us</h2>
+              <div class="line"></div>
+            </div>
+            <p><strong>Dentisto</strong> was established in 2007 with the aim of helping the people to smile by providing
+                 a comprehensive range of dental services and unparallelled patient care at affordable prices and flexible times. 
+             </p>
+            
+            <br>
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Experience Dentist</h6>
+              <div id="bar1" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="87"></span>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Single Dentisto Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/10A.png' %}" alt="">
-            <!-- Dentisto Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                
-              </div>
-              <!-- Dentisto Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>James Harvest</h5>
-                <p>Surgical Extractions </p>
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Modern Equipment</h6>
+              <div id="bar2" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="79"></span>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Single Dentisto Area -->
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/14B.jpg' %}" alt="">
-            <!-- Dentisto Content -->
-            <div class="dentist-content">
-              <!-- Social Info -->
-              <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                
-              </div>
-              <!-- Dentisto Info -->
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Chloe Foley</h5>
-                <p>Director of Dentistry</p>
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Friendly Staff</h6>
+              <div id="bar3" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="82"></span>
               </div>
             </div>
           </div>
@@ -642,7 +572,55 @@
       </div>
     </div>
   </section>
-  <!-- ***** Dentisto Area End ***** -->
+  <!-- ****** About Us Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_genius"></i>
+            <h2><span class="counter">14</span></h2>
+            <h5>Years Of Experience</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_heart_alt"></i>
+            <h2><span class="counter">592</span>+</h2>
+            <h5>Happy Patients</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_book_alt"></i>
+            <h2><span class="counter">13</span></h2>
+            <h5>Certificates</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_id"></i>
+            <h2><span class="counter">21</span>+</h2>
+            <h5>Dentist</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
 
   
     <div class="container">
