@@ -17,7 +17,7 @@ SECRET_KEY = 'qmuvva920uvz2z52@2*5^klxg8zh&u*9t#7tceuz8f3ph030yo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stefdentisto.herokuapp.com',]
 
 
 # Application definition
@@ -130,7 +130,9 @@ EMAIL_PORT = 1025
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''  
 EMAIL_USE_TLS = False
-  
+ 
+
+django_heroku.settings(locals())
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
